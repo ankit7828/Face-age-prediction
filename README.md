@@ -5,16 +5,16 @@ Face Age Prediction with Small Dataset - (A deep learning model that predicts a 
 
 A deep learning-based web application that predicts a person's age group from facial images using a pre-trained CNN model. The system is built using TensorFlow/Keras and deployed via a Flask web app.
 
-#Features
-*You can upload any face image 
-*Model predict age group (0–10, 11–20, …) 
-*Fast inference using pre-trained model 
-*Simple web interface (Flask) 
-*Evaluation using: 
-*Accuracy 
-*Top-2 Accuracy 
-*Mean Absolute Error (MAE) 
-*Confusion Matrix
+# Features
+- You can upload any face image 
+- Model predict age group (0–10, 11–20, …) 
+- Fast inference using pre-trained model 
+- Simple web interface (Flask) 
+- Evaluation using: 
+- Accuracy 
+- Top-2 Accuracy 
+- Mean Absolute Error (MAE) 
+- Confusion Matrix
 
 
 Model Details
