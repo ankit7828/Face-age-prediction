@@ -70,16 +70,16 @@ pip install -r requirements.txt
 
 ## 5. Dataset Setup
 
-**Option 1:** Use Provided Dataset  
+**Option 1:** Use Provided Dataset (you dont need to make it in project folder it already have it)  
 I have placed dataset inside project folder:   
 
 											dataset/
 											 	train/
 									  		 	val/
-**Option 2:** Use UTKFace Dataset
+**Option 2:** Use UTKFace Dataset (it you do this method then you need to organize it and put it on project folder)
 Download UTKFace dataset from Kaggle 
 
-Preprocess and organize into age groups:   
+Preprocess and organize into age groups:
 					
 										dataset/
 											train/
