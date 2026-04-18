@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Age Predictor</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 
+<div class="background"></div>
+
 <div class="container">
-    <h1>Face Age Group Predictor</h1>
+    <div class="card">
 
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="image" required>
-        <button type="submit">Predict</button>
-    </form>
+        <h1>👤 Face Age Predictor</h1>
+        <p class="subtitle">AI-powered age group detection from facial images</p>
 
-    {% if image_path %}
+        <form method="POST" enctype="multipart/form-data">
+
+            <div class="upload-area">
+                <input type="file" name="image" id="fileInput" required>
+                <label for="fileInput">
+                    📁 Click to Upload Image
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Predict Age</button>
+
+        </form>
+
+        {% if image_path %}
         <div class="result">
-            <img src="{{ image_path }}" width="250">
-            <h2>Age Group: {{ prediction }}</h2>
-            <h3>Confidence: {{ (confidence*100) | round(2) }}%</h3>
+
+            <img src="{{ image_path }}" alt="Uploaded Image">
+
+            <h2>Prediction</h2>
+            <p class="age">{{ prediction }}</p>
+
+            <div class="confidence">
+                <span>Confidence</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: {{ confidence*100 }}%"></div>
+                </div>
+                <p class="percent">{{ (confidence*100) | round(2) }}%</p>
+            </div>
+
         </div>
-    {% endif %}
+        {% endif %}
+
+    </div>
 </div>
 
 </body>
