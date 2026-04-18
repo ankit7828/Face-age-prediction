@@ -51,7 +51,7 @@ Follow the steps below to set up and run the project locally.
 
 ## 2. Clone the Repository
 
-git clone [https://github.com/your-username/face-age-prediction.git ](https://github.com/ankit7828/Face-age-prediction.git)   
+git clone [https://github.com/ankit7828/face-age-prediction.git ](https://github.com/ankit7828/Face-age-prediction.git)   
 cd face-age-prediction
 
 ## 3. Create Virtual Environment (Recommended)
