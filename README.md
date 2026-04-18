@@ -68,7 +68,20 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-## 5. Dataset Setup
+## 5. Run the Web Application
+
+python app.py
+
+## 6. Open in Browser
+
+http://127.0.0.1:5000/
+
+## 7. Upload & Predict
+
+Upload a face image 
+Model predicts age group instantly 
+
+## Dataset Setup
 
 **Option 1:** Use Provided Dataset (you dont need to make it in project folder it already have it)  
 I have placed dataset inside project folder:   
@@ -95,7 +108,7 @@ Preprocess and organize into age groups:
 
 Each folder represents an age group (10-year gap)
 
-## 6. Train the Model
+## Train the Model
 
 If you want to train from scratch: python train.py  
 Model will be saved in:   
@@ -104,18 +117,7 @@ Model will be saved in:
 					  		best_model.keras
 					  		final_model.keras
 
-## 7. Run the Web Application
 
-python app.py
-
-## 8. Open in Browser
-
-http://127.0.0.1:5000/
-
-## 9. Upload & Predict
-
-Upload a face image 
-Model predicts age group instantly 
 
 ## Evaluation Metrics we can use
 | Metric            | Description                     |
